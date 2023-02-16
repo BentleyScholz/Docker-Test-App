@@ -1,4 +1,6 @@
-FROM scratch
+FROM python:3.8-slim-buster
 
-RUN echo "sbubby"
+ADD . .
+WORKDIR /src
+CMD ["python3","-u","simple_app.py","wumpus.txt"]
 
