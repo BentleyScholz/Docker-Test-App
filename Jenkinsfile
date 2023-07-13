@@ -3,7 +3,7 @@ pipeline {
         dockerfile true
     }
     triggers {
-        cron('0 0/5 0 ? * * *')
+        cron('*/5 * * * *')
     }
     stages {
         stage('Docker') {
